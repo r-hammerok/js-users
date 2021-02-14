@@ -25,7 +25,18 @@ const
                         ', зарегистрирован: ' + item.regdate;
                 document.getElementById('list').insertAdjacentHTML('beforeend',`<li>${info}</li>`);
             });
+        },
+
+        regUser: function() {
+            console.log('Регистрация пользователя');
+        },
+
+        loginUser: function() {
+            console.log('Авторизация пользователя');
         }
     };
 
+    document.getElementById('register').addEventListener('click', appData.regUser);
+    document.getElementById('login').addEventListener('click', appData.loginUser);
+    
     appData.render();
