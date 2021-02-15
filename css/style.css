@@ -1,5 +1,14 @@
 button {
     padding: 10px 20px;
     font-size: 16px;
-    color: 2d2828;
+    color: #2d2828;
+}
+button.user-remove {
+    margin-left: 10px;
+    padding: 0px 4px;
+    color: red
+}
+
+ul > li + li {
+    margin-top: 15px;
 }
